@@ -60,6 +60,38 @@ mobil görünümde okunabilirliği koruyacak şekilde düzenlenmiştir.
 
 ---
 
+## ⚙️ Kurulum ve Çalıştırma
+
+Bu proje saf HTML, CSS ve JavaScript kullanılarak geliştirilmiştir.
+Herhangi bir build veya package manager gerektirmez.
+
+### Çalıştırma
+1. Proje dosyalarını indirin veya klonlayın
+2. `login.html` dosyasını tarayıcıda açın
+3. Supabase bağlantısı aktif olduğu sürece uygulama çalışır
+
+---
+
+## 🔑 Ortam Değişkenleri (Environment Variables)
+
+Bu projede Supabase bağlantı bilgileri JavaScript dosyaları içerisinde
+tanımlanmıştır.
+
+Gerçek projelerde güvenlik sebebiyle bu bilgilerin `.env` dosyası üzerinden
+yönetilmesi önerilir.
+
+> Bu proje staj süreci kapsamında hazırlandığı için,
+> kurulum kolaylığı amacıyla env ayrıştırması yapılmamıştır.
+
+---
+
+## 🔒 Repository Hakkında
+
+Bu repository, inceleme sürecini kolaylaştırmak amacıyla **public**
+olarak paylaşılmıştır.
+
+Talep edilmesi halinde private repository olarak da sunulabilir.
+
 ## 👤 Geliştirici
 
 **Nergiz Er**  
