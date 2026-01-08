@@ -55,7 +55,6 @@ document.addEventListener("DOMContentLoaded", async function () {
       const actions = document.createElement("div");
       actions.className = "actions";
 
-      // 🔄 GERİ YÜKLE
       const restoreBtn = document.createElement("button");
       restoreBtn.textContent = "Geri Yükle";
       restoreBtn.className = "restore-btn";
@@ -68,7 +67,6 @@ document.addEventListener("DOMContentLoaded", async function () {
         loadDeletedTodos();
       };
 
-      // ❌ KALICI SİL
       const deleteBtn = document.createElement("button");
       deleteBtn.textContent = "Kalıcı Sil";
       deleteBtn.className = "delete-btn";

@@ -28,7 +28,6 @@ document.addEventListener("DOMContentLoaded", async function () {
   let todos = [];
   let currentFilter = "all";
 
-  // FİLTRE BUTONLARI
   document.querySelectorAll(".filters button").forEach(btn => {
     btn.onclick = () => {
       document.querySelectorAll(".filters button").forEach(b => b.classList.remove("active"));

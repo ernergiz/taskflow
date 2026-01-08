@@ -16,7 +16,6 @@
       color: #222;
     }
 
-    /* HEADER */
     .header {
       position: fixed;
       top: 0;
@@ -51,7 +50,6 @@
       text-decoration: underline;
     }
 
-    /* CONTAINER */
     .container {
       max-width: 600px;
       margin: 100px auto 40px;
@@ -63,7 +61,6 @@
 
     h2 { margin: 0 0 18px; text-align: center; }
 
-    /* FILTERS — EKLENDİ */
     .filters {
       display: flex;
       justify-content: center;
@@ -86,7 +83,6 @@
       border-color: #292633;
     }
 
-    /* ADD TODO */
     .add-todo {
       display: flex;
       gap: 10px;
@@ -111,7 +107,6 @@
       cursor: pointer;
     }
 
-    /* LIST */
     ul { list-style: none; padding: 0; margin: 0; }
 
     li {
@@ -145,7 +140,6 @@
       color: #999;
     }
 
-    /* ACTIONS */
     .actions button {
       background: #9e2828;
       color: white;
@@ -156,7 +150,6 @@
       cursor: pointer;
     }
 
-    /* EMPTY STATE — EKLENDİ */
     .empty-state {
       text-align: center;
       color: #888;
@@ -190,7 +183,6 @@
 <div class="container">
   <h2>📝 Yapılacaklar Listesi</h2>
 
-  <!-- FİLTRELER -->
   <div class="filters">
     <button data-filter="all" class="active">Tümü</button>
     <button data-filter="active">Aktif</button>
@@ -204,7 +196,6 @@
 
   <ul id="todoList"></ul>
 
-  <!-- EMPTY STATE -->
   <div id="emptyState" class="empty-state">
     <p>📭 Henüz görev yok</p>
     <span>İlk görevini ekleyerek başla</span>
