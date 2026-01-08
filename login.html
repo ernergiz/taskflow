@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>TaskFlow Lite | Giriş</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <style>
+    * {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  background: linear-gradient(135deg, #e2dfe7, #989699);
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* CARD */
+.card {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  padding: 36px 30px;
+  width: 100%;
+  max-width: 380px;
+  border-radius: 16px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+  animation: fadeUp 0.4s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* TITLE */
+.card h2 {
+  margin: 0 0 24px;
+  text-align: center;
+  font-size: 22px;
+  color: #333;
+}
+
+/* INPUTS */
+.card input {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 14px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card input:focus {
+  border-color: #7b6d9b;
+  box-shadow: 0 0 0 3px rgba(123, 109, 155, 0.15);
+}
+
+/* BUTTON */
+.card button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #474157, #292633);
+  color: white;
+  cursor: pointer;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(95, 75, 139, 0.4);
+}
+
+.card button:active {
+  transform: translateY(0);
+  box-shadow: none;
+}
+
+/* RESPONSIVE */
+@media (max-width: 420px) {
+  .card {
+    padding: 28px 22px;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="card">
+    <h2>🔐 Giriş Yap</h2> <input id="email" type="email" placeholder="Email"> <input id="password" type="password"
+      placeholder="Şifre"> <button id="loginBtn">Giriş Yap</button>
+  </div>
+  <script src="js/login.js"></script>
+</body>
+
+</html>
